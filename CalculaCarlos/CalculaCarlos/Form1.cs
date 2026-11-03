@@ -57,5 +57,25 @@ namespace CalculaCarlos
 
             labelResultado.Text = resultado.ToString();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            numero01 = Convert.ToDouble(textBoxnumero01.Text);
+            numero02 = Convert.ToDouble(textBoxnumero02.Text);
+
+            resultado = Math.Pow(numero01, numero02);
+
+            labelResultado.Text = resultado.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            numero01 = Convert.ToDouble(textBoxnumero01.Text);
+            numero02 = Convert.ToDouble(textBoxnumero02.Text);
+
+            resultado = Math.Log(numero01, numero02);
+
+            labelResultado.Text = resultado.ToString();
+        }
     }
 }

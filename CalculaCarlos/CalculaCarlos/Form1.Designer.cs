@@ -37,6 +37,8 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
             SuspendLayout();
             // 
             // textBoxnumero01
@@ -131,12 +133,38 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.BackColor = Color.DarkOrange;
+            button5.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Location = new Point(750, 639);
+            button5.Name = "button5";
+            button5.Size = new Size(286, 53);
+            button5.TabIndex = 9;
+            button5.Text = "Logaritmo";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.DarkViolet;
+            button6.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Location = new Point(436, 639);
+            button6.Name = "button6";
+            button6.Size = new Size(286, 53);
+            button6.TabIndex = 10;
+            button6.Text = "Exponenciação";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSeaGreen;
             ClientSize = new Size(1430, 817);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -164,5 +192,7 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
+        private Button button6;
     }
 }
